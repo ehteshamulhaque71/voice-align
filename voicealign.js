@@ -19,7 +19,7 @@ let utteredCommand = selection.value;
 let commandHistory = history.value;
 let startTime = new Date();
 let endTime = new Date();
-let API_KEY = "YOUR_API_KEY";
+const API_KEY = "YOUR_API_KEY";
 
 function populateVoiceList() {
 	voices = window.speechSynthesis.getVoices();
