@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="style.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voice Align</title>
+	<script type="module" src="voicealign.js"></script>
+</head>
+
+<body>
+	<button id="startRecording">Start Listening</button>
+	<h1>VoiceAlign</h1>
+	<div id="speechIcon" style="display: block; visibility: hidden;"></div>
+	<textarea id="commandResult" rows="2" cols="50" readonly></textarea>
+	<textarea id="result" rows="1" cols="50" readonly placeholder="Your uttered command will appear here..."></textarea>
+	<label>current selection</label>
+	<textarea id="selection" rows="2" cols="50">""</textarea>
+	<label>command history</label>
+	<textarea id="history" rows="2" cols="50">[]</textarea>
+	<div id="commandResult"></div>
+	<select id="voiceSelect"></select>
+	<button id="playCommand" disabled>Play Command</button>
+</body>
+
+</html>
